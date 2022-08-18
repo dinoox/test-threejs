@@ -1,0 +1,7 @@
+~$locale.xlsx
+.vscode/
+.idea/workspace.xml
+.idea/
+.cache/
+dist/
+node_modules/
