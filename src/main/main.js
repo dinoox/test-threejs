@@ -27,8 +27,9 @@ document.body.appendChild(renderer.domElement)
 const controls = new OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
 
-    //Setup IFC Loader
-    const ifcLoader = new IFCLoader();
+//Setup IFC Loader
+const ifcLoader = new IFCLoader();
+ifcLoader.ifcManager.setWasmPath( './' );
 ifcLoader.load('model/ifc/rac_advanced_sample_project.ifc', function (model) {
     scene.add(model.mesh);
 });
